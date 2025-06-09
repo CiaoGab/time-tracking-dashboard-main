@@ -238,3 +238,70 @@ span {
     max-height: 3.8rem;
 }
 
+@media screen and (min-width: 768px) {
+    h3 {
+        font-size: var(--fspreset1);
+        margin: 0;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-content: center;
+        width: 61.2rem;
+        margin: 0;
+        padding: 0;
+    }
+    .title-card{
+        grid-column: 1 / 4;
+        grid-row: 1 / 1;
+    }
+    .timeframe-container{
+        justify-content: space-evenly;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 21.3rem;
+        padding: 0;
+    }
+    .content-container{
+        padding: 2.4rem;
+    }
+    .activity-header{
+        max-height: none;
+        margin-bottom: 1.6rem;
+    }
+    .activity-stats {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2.5rem;
+        width: 100%;
+    }
+    .activity-stats p {
+        font-size: var(--fspreset6);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        place-content: center;
+    }
+    .title-card {
+        grid-column: 1 / 1;
+        grid-row: 1 / 3;
+        width: 25.5rem;
+    }
+    .name-container {
+        flex-direction: column;
+    }
+    .timeframe-container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    .card {
+        width: 24.4rem;
+    }
+}
